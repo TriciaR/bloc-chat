@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app="bloc-chat-go">
+<html ng-app="blocChat">
 <head lang="en">
   <meta charset="UTF-8">
   <title>BLOC CHAT - Bloc project</title>
@@ -15,26 +15,27 @@
   <!-- AngularUI Router -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
 
-  <!-- FireBase -->
-  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-
   <!-- AngularFire -->
   <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
 
-  <script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
-    // Initialize Firebase
-    var config = {
-      apiKey: <your unique api key>,
-         authDomain: <your unique auth url>,
-         databaseURL: <your unique db url>,
-         storageBucket: <your unique bucket url>,
-         messagingSenderId: <your unique messagingSenderId>
-       };
-       firebase.initializeApp(config);
-  </script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDPUW2y5UzC6CkD5F_BCqghhFDHYUKhloc",
+    authDomain: "bloc-chat-go.firebaseapp.com",
+    databaseURL: "https://bloc-chat-go.firebaseio.com",
+    projectId: "bloc-chat-go",
+    storageBucket: "bloc-chat-go.appspot.com",
+    messagingSenderId: "639286836454"
+  };
+  firebase.initializeApp(config);
+</script>
 
   <!-- Application Files -->
   <script src="/scripts/app.js"></script>
+  <script src="/scripts/controllers/HomeCtrl.js"></script>
+  <script src="/scripts/services/Room.js"></script>
 </body>
 </html>

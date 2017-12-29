@@ -1,1 +1,7 @@
-<h1>Home Page</h1>
+<section ng-controller="HomeCtrl as home">
+
+
+
+    <h1>Bloc Chat - Home Page</h1>
+        <h2 ng-repeat = "room in home.rooms"> {{room.name}} </h2>
+</section>

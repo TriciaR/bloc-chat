@@ -7,3 +7,5 @@ npm-debug.log
 /.vs
 /.vs/bloc-chat
 /.vs/config
+/.firebaserc
+/firebase.json

@@ -4,6 +4,6 @@ npm-debug.log
 .idea/
 .sass-cache/
 .DS_Store
-.vs/bloc-chat/v15/.suo
-.vs/slnx.sqlite
-.vs/
+/.vs
+/.vs/bloc-chat
+/.vs/config

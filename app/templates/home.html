@@ -1,7 +1,10 @@
 <section ng-controller="HomeCtrl as home">
+    <div class = "side-bar">
+    <h1>Bloc Chat</h1>
+    <button class='modal-button' ng-click='home.modal()'>New Room</button>
 
-
-
-    <h1>Bloc Chat - Home Page</h1>
-        <h2 ng-repeat = "room in home.rooms"> {{room.name}} </h2>
+        <ul class="list-rooms" ng-repeat = "room in home.rooms">
+            {{room.$value}}
+        </ul>
+    </div>
 </section>
